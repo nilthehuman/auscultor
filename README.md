@@ -1,4 +1,4 @@
-auscultor – an NLP hobby project
+auscultor - an NLP hobby project
 ================================
 
 This repository is basically a sandbox where I fiddle around with
@@ -9,6 +9,7 @@ TODO
 ----
 
 Here's a rough roadmap of what I'm going to try and make happen:
+- detect if input is in English
 - sentence segmentation
 - word segmentation
 - word classification
