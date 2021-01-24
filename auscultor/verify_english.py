@@ -11,7 +11,7 @@ ARABIC_NUMERALS = [str(x) for x in range(0, 10)]
 
 WHITESPACE = [' ', '\n', '\r', '\t']
 
-PUNCTUATION = [',', '(', ')', '[', ']', '"', '\'', ':', ';', '.', '!', '?', '_']
+PUNCTUATION = [',', '(', ')', '[', ']', '"', '`', '\'', ':', ';', '.', '!', '?', '_']
 
 ENGLISH_CHARSET = ENGLISH_ALPHABET + ARABIC_NUMERALS + WHITESPACE + PUNCTUATION
 
