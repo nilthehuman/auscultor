@@ -1,9 +1,9 @@
 # A few helper functions to determine if a given text is written in English
 
 from itertools import chain
-from nltk.tokenize import word_tokenize
 
 from .common_words import COMMON_ENGLISH_NON_VERBS, COMMON_ENGLISH_WORDS
+from .tokenize import get_words
 
 ENGLISH_ALPHABET = [chr(x) for x in chain(range(ord('A'), ord('Z')+1), range(ord('a'), ord('z')+1))]
 
@@ -44,5 +44,5 @@ ENGLISH_CHARACTER_LIMIT = 0.9
 ENGLISH_WORDS_LIMIT = 0.2
 
 def is_in_english(string):
-    tokens = word_tokenize(string.lower())
+    tokens = get_words(string.lower())
     return ENGLISH_CHARACTER_LIMIT < prevalence_of_english_characters(string) and ENGLISH_WORDS_LIMIT < prevalence_of_common_words(tokens)
