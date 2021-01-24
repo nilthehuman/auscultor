@@ -1,6 +1,6 @@
 import sys
 
-MIN_PYTHON = (3, 8)
+MIN_PYTHON = (3, 6)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Please use Python %s.%s or later.\n" % MIN_PYTHON)
 
