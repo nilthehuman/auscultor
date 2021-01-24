@@ -11,5 +11,7 @@ test:
 
 clean:
 	rm -rf .pytest_cache/
+	rm -rf __pycache__/
 	rm -rf auscultor/__pycache__/
 	rm -rf tests/__pycache__/
+	rm -rf build/
