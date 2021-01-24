@@ -15,8 +15,6 @@ TODO
 
 Here's a rough roadmap of what I'm going to try and make happen:
 - detect if input is in English
-- sentence segmentation
-- word segmentation
 - word classification
 - topic identification for the whole input
 - topic identification per sentence?
