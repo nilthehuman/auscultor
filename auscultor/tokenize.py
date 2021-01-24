@@ -8,5 +8,4 @@ def get_words(string):
     """Extract all words from a string."""
     tokens = word_tokenize(string)
     words = list(filter(lambda x: any(map(str.isalnum, x)), tokens))
-    words_lower = list(map(lambda x: x.lower(), words))
-    return words_lower
+    return words

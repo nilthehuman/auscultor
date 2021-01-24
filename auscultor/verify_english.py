@@ -28,11 +28,11 @@ def prevalence_of_english_characters(string):
 
 def strip_common_non_verbs(tokens):
     """Remove the most common non-verb words from a list of tokens."""
-    return list(filter(lambda x: x not in COMMON_ENGLISH_NON_VERBS, tokens))
+    return list(filter(lambda x: x.lower() not in COMMON_ENGLISH_NON_VERBS, tokens))
 
 def strip_common_words(tokens):
     """Remove the most common English words from a list of tokens."""
-    return list(filter(lambda x: x not in COMMON_ENGLISH_WORDS, tokens))
+    return list(filter(lambda x: x.lower() not in COMMON_ENGLISH_WORDS, tokens))
 
 def prevalence_of_common_words(tokens):
     """Determine the ratio of common words in a list of tokens (between 0 and 1)."""
@@ -45,6 +45,6 @@ ENGLISH_WORDS_LIMIT = 0.2
 
 def is_in_english(string):
     """Find out if the given string is writter in English."""
-    tokens = get_words(string.lower())
+    tokens = get_words(string)
     return (ENGLISH_CHARACTER_LIMIT < prevalence_of_english_characters(string)
             and ENGLISH_WORDS_LIMIT < prevalence_of_common_words(tokens))
