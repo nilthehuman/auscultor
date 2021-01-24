@@ -1,9 +1,13 @@
-# Word roots from en.wikipedia.org/wiki/Most_common_words_in_English, inflected forms added by hand.
-# Sorted items by category and meaning to make the whole list more readable. Order does not matter.
-# Removed the following items: 'day', 'first', 'good', 'new', 'only', 'people', 'time', 'two',
-#                              'way', 'work', 'year'.
-# Added the following new items: 'before', 'down, 'few', 'here', 'many', 'those', 'though', 'under',
-#                                'where', 'whom', 'whose', 'why'.
+"""This module lists the ~100 most common English words that carry little topical information.
+
+Word roots from en.wikipedia.org/wiki/Most_common_words_in_English, inflected forms added by hand.
+Items sorted by category and meaning to make the whole list more readable. Order does not matter.
+
+The following items were removed: 'day', 'first', 'good', 'new', 'only', 'people', 'time', 'two',
+                                  'way', 'work', 'year'.
+The following new items were added: 'before', 'down, 'few', 'here', 'many', 'those', 'though',
+                                    'under' ,'where', 'whom', 'whose', 'why'.
+"""
 
 COMMON_ENGLISH_NON_VERBS = [
     # articles
@@ -50,7 +54,7 @@ COMMON_ENGLISH_VERBS = [
 ]
 
 # Ensure no duplicates
-assert( len(list(set(COMMON_ENGLISH_NON_VERBS))) == len(COMMON_ENGLISH_NON_VERBS) )
-assert( len(list(set(COMMON_ENGLISH_VERBS))) == len(COMMON_ENGLISH_VERBS) )
+assert len(list(set(COMMON_ENGLISH_NON_VERBS))) == len(COMMON_ENGLISH_NON_VERBS)
+assert len(list(set(COMMON_ENGLISH_VERBS))) == len(COMMON_ENGLISH_VERBS)
 
 COMMON_ENGLISH_WORDS = COMMON_ENGLISH_NON_VERBS + COMMON_ENGLISH_VERBS

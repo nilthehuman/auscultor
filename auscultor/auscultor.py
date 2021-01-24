@@ -1,14 +1,16 @@
+"""The main entry point to the auscultor text analyzer tool."""
+
 #import argparse
 #parser = argparse.ArgumentParser()
 #parser.add_argument("url", help="the webpage you wish to download and analyze")
 #parser.parse_args()
 
-def hello():
-    """Say hello."""
-    print("hello world")
-
 def main():
-    hello()
+    """main function, called by 'python -m auscultor'
+
+    Takes an HTTP URL as parameter to fetch and analyze.
+    """
+    print("hello world")
 
 if __name__ == '__main__':
     main()

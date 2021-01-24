@@ -1,4 +1,4 @@
-# A few helper functions to determine if a given text is written in English
+"""A few helper functions to determine if a given text is written in English."""
 
 from itertools import chain
 
@@ -44,5 +44,7 @@ ENGLISH_CHARACTER_LIMIT = 0.9
 ENGLISH_WORDS_LIMIT = 0.2
 
 def is_in_english(string):
+    """Find out if the given string is writter in English."""
     tokens = get_words(string.lower())
-    return ENGLISH_CHARACTER_LIMIT < prevalence_of_english_characters(string) and ENGLISH_WORDS_LIMIT < prevalence_of_common_words(tokens)
+    return (ENGLISH_CHARACTER_LIMIT < prevalence_of_english_characters(string)
+            and ENGLISH_WORDS_LIMIT < prevalence_of_common_words(tokens))
