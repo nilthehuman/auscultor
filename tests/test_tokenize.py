@@ -10,3 +10,8 @@ def test_get_sentences():
 
 def test_get_words():
     assert len(auscultor.tokenize.get_words(UDHR_ARTICLE_1)) == 32
+
+def test_oxford_join():
+    assert auscultor.tokenize.oxford_join(['one']) == 'one'
+    assert auscultor.tokenize.oxford_join(['one', 'two']) == 'one and two'
+    assert auscultor.tokenize.oxford_join(['one', 'two', 'three']) == 'one, two, and three'

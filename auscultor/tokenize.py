@@ -9,3 +9,13 @@ def get_words(string):
     tokens = word_tokenize(string)
     words = list(filter(lambda x: any(map(str.isalnum, x)), tokens))
     return words
+
+def oxford_join(words):
+    """Concatenate words with commas and a final 'and' between."""
+    assert 0 < len(words)
+    if 1 == len(words):
+        return words[0]
+    elif 2 == len(words):
+        return words[0] + ' and ' + words[1]
+    else:
+        return ' '.join(map(lambda x: x + ',', words[0:-1])) + ' and ' + words[-1]
