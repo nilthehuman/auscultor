@@ -12,10 +12,9 @@ def get_words(string):
 
 def oxford_join(words):
     """Concatenate words with commas and a final 'and' between."""
-    assert 0 < len(words)
-    if 1 == len(words):
+    assert len(words) > 0
+    if len(words) == 1:
         return words[0]
-    elif 2 == len(words):
+    if len(words) == 2:
         return words[0] + ' and ' + words[1]
-    else:
-        return ' '.join(map(lambda x: x + ',', words[0:-1])) + ' and ' + words[-1]
+    return ' '.join(map(lambda x: x + ',', words[0:-1])) + ' and ' + words[-1]
