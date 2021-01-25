@@ -1,6 +1,6 @@
 """This module lists the ~100 most common English words that carry little topical information.
 
-Word roots from en.wikipedia.org/wiki/Most_common_words_in_English, inflected forms added by hand.
+Lemmata from en.wikipedia.org/wiki/Most_common_words_in_English, inflected forms added by hand.
 Items sorted by category and meaning to make the whole list more readable. Order does not matter.
 
 The following items were removed: 'day', 'first', 'good', 'new', 'only', 'people', 'time', 'two',
